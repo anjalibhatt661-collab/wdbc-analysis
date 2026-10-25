@@ -1,0 +1,11 @@
+SUMMARY
+samples: 569 (212 malignant, 357 benign); features tested: 30
+significant, uncorrected p < 0.05: 27
+significant, Benjamini-Hochberg FDR < 0.05: 27
+significant, Bonferroni < 0.05: 26
+not significant after BH: smoothness_se, mean_fractal_dimension, texture_se
+strongest effect: worst_perimeter (AUC 0.975)
+weakest effect: texture_se (AUC 0.512)
+null check (200 permutations): mean uncorrected hits 1.41, mean BH discoveries 0.060, permutations with >=1 BH discovery 4
+split-half: discovery n=284, validation n=285; selected 27 features; replicated 26
+correlation: 26 of 435 feature pairs have |Spearman rho| > 0.9; 7 principal components explain 90% of the variance
